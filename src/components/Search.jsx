@@ -73,7 +73,9 @@ const Search = () => {
                         <label>Check-Out</label>
                         <input className='border rounded-md p-2' type='date' />
                     </div>
-                    <button className='w-full my4'>Rates & Availabilities</button>
+                    <button className='w-full my4'>
+                        Rates & Availabilities
+                    </button>
                 </form>
             </div>
         </div>
