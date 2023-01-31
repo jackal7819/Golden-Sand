@@ -19,18 +19,28 @@ const Navbar = () => {
         setLogo(!logo);
     };
     return (
-        <div className='flex w-full justify-between items-center h-20 px-4 absolute z-10 text-white'>
+        <div
+            className='flex w-full justify-between items-center h-20 px-4 absolute z-10 text-white'
+            id='navbar'>
             <div>
-                <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>
-                    BEACHES
-                </h1>
+                <h1>GOLDEN SAND</h1>
             </div>
             <ul className='hidden md:flex'>
-                <li>Home</li>
-                <li>Destinations</li>
-                <li>Travel</li>
-                <li>View</li>
-                <li>Book</li>
+                <li>
+                    <a href='#navbar'>Home</a>
+                </li>
+                <li>
+                    <a href='#destinations'>Destinations</a>
+                </li>
+                <li>
+                    <a href='#travel'>Travel</a>
+                </li>
+                <li>
+                    <a href='#view'>View</a>
+                </li>
+                <li>
+                    <a href='#search'>Book</a>
+                </li>
             </ul>
             <div className='hidden md:flex'>
                 <BsSearch className='mr-2' size={20} />
@@ -55,22 +65,56 @@ const Navbar = () => {
                         : 'absolute left-[-100%]'
                 }>
                 <ul>
-                    <h1>BEACHES</h1>
-                    <li>Home</li>
-                    <li>Destinations</li>
-                    <li>Travel</li>
-                    <li>View</li>
-                    <li>Book</li>
+                    <li>
+                        <a href='#navbar'>Home</a>
+                    </li>
+                    <li>
+                        <a href='#destinations'>Destinations</a>
+                    </li>
+                    <li>
+                        <a href='#travel'>Travel</a>
+                    </li>
+                    <li>
+                        <a href='#view'>View</a>
+                    </li>
+                    <li>
+                        <a href='#search'>Book</a>
+                    </li>
                     <div className='flex flex-col'>
                         <button className='my-6'>Search</button>
                         <button>Account</button>
                     </div>
                     <div className='flex justify-between my-6'>
-                        <FaFacebook className='icon' />
-                        <FaTwitter className='icon' />
-                        <FaYoutube className='icon' />
-                        <FaPinterestP className='icon' />
-                        <FaInstagram className='icon' />
+                        <a
+                            href='https://www.facebook.com/'
+                            target='_blank'
+                            rel='noreferrer'>
+                            <FaFacebook className='icon' />
+                        </a>
+                        <a
+                            href='https://twitter.com/'
+                            target='_blank'
+                            rel='noreferrer'>
+                            <FaTwitter className='icon' />
+                        </a>
+                        <a
+                            href='https://www.youtube.com/'
+                            target='_blank'
+                            rel='noreferrer'>
+                            <FaYoutube className='icon' />
+                        </a>
+                        <a
+                            href='https://www.pinterest.com/'
+                            target='_blank'
+                            rel='noreferrer'>
+                            <FaPinterestP className='icon' />
+                        </a>
+                        <a
+                            href='https://www.instagram.com/'
+                            target='_blank'
+                            rel='noreferrer'>
+                            <FaInstagram className='icon' />
+                        </a>
                     </div>
                 </ul>
             </div>

@@ -7,6 +7,8 @@
 :root {
     --primary-dark: #5651e5;
     --primary-light: #709dff;
+    scroll-behavior: smooth;
+    user-select: none;
 }
 
 .icon {

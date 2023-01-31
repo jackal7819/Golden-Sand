@@ -2,7 +2,7 @@ import React from 'react';
 
 const SelectsCard = (props) => {
     return (
-        <div className='relative'>
+        <div className='relative' id='travel'>
             <img
                 className='w-full h-full object-cover'
                 src={props.bg}
